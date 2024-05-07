@@ -1,8 +1,8 @@
-# SOCIAL-MEDIA-BACKEND
+# Mail-Tym-BACKEND
 
 ## Overview
 
-Social-Media application.In this app have become an integral part of daily life, offering users diverse features to share, interact, and engage with content.
+Mail tym application.In this app have become an integral part of daily life, offering users diverse features to share, interact, and engage with content.
 
 ## Social Media Application - Key Features
 
