@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\Shakil\\Editable_Projects\\Web App\\the_SMPT\\SMPT backend-app\\logs\\winston\\succeses\\.d21a135850f46c017afb1adebe7e7f5f680e08e2-audit.json",
+    "files": [
+        {
+            "date": 1714567507355,
+            "name": "C:\\Users\\Shakil\\Editable_Projects\\Web App\\the_SMPT\\SMPT backend-app\\logs\\winston\\succeses\\success-2024-05-01-18.log",
+            "hash": "9c23644412d9d1e0d456e0dbd6ef9e2a883ec8b75ee042f0fa36496eeb2dcdbf"
+        },
+        {
+            "date": 1714568850172,
+            "name": "C:\\Users\\Shakil\\Editable_Projects\\Web App\\the_SMPT\\SMPT backend-app\\logs\\winston\\succeses\\success-2024-05-01-19.log",
+            "hash": "2c119f1fa54ac9319a5a6e916c4ebd62fb6658023e886ab1f16d56348b4e37e2"
+        }
+    ],
+    "hashType": "sha256"
+}

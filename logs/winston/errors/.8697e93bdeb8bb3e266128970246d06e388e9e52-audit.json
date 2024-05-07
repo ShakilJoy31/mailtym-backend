@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\errors\\.8697e93bdeb8bb3e266128970246d06e388e9e52-audit.json",
+    "files": [
+        {
+            "date": 1705665865616,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\errors\\error-2024-01-19-18.log",
+            "hash": "7ae49ae959c31aeba04fda53efa2d895ebabf45762ccec4b3171568664661b76"
+        },
+        {
+            "date": 1706115908584,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\errors\\error-2024-01-24-23.log",
+            "hash": "7f66165984b3d42a593446ddca5b692c452505129cc211b336c84785aeeeb80a"
+        },
+        {
+            "date": 1706125127218,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\errors\\error-2024-01-25-01.log",
+            "hash": "4dc41000e55042cf00fa4dae93e408f9038618ef6f32d739deee745d0b026cc8"
+        },
+        {
+            "date": 1706187527621,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\errors\\error-2024-01-25-18.log",
+            "hash": "ca4a3e9bfe61e056c8362fb575219257278bea0c21bdd191830d66cd2d6f5fe9"
+        },
+        {
+            "date": 1706218528545,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\errors\\error-2024-01-26-03.log",
+            "hash": "5542d8a28f7d6497760a2e335f2c0ff2506349a1ae5bbbace5f409d6440e45e8"
+        },
+        {
+            "date": 1706220334206,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\errors\\error-2024-01-26-04.log",
+            "hash": "bb43a26d68333d4474a563bd2f011e20ca6f050b7540977eb95c9eb9141cbd74"
+        },
+        {
+            "date": 1706268825722,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\errors\\error-2024-01-26-17.log",
+            "hash": "98fa37b16d70211b74af51692d2870d2c4a63bc4d62a8baef97eeb23dc8ce5a6"
+        }
+    ],
+    "hashType": "sha256"
+}

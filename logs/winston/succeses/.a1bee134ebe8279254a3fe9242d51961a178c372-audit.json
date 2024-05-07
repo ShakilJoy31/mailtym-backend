@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\Shakil\\Editable_Projects\\Web App\\mail-tym\\mailtym- backend\\logs\\winston\\succeses\\.a1bee134ebe8279254a3fe9242d51961a178c372-audit.json",
+    "files": [
+        {
+            "date": 1715100327432,
+            "name": "C:\\Users\\Shakil\\Editable_Projects\\Web App\\mail-tym\\mailtym- backend\\logs\\winston\\succeses\\success-2024-05-07-22.log",
+            "hash": "53fdc0fe61d0cc83998445db3537caad30156d220dc78b6e382c799df6107f27"
+        }
+    ],
+    "hashType": "sha256"
+}

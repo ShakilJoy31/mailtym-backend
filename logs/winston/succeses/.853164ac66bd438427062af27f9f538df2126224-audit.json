@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\succeses\\.853164ac66bd438427062af27f9f538df2126224-audit.json",
+    "files": [
+        {
+            "date": 1705665865611,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\succeses\\success-2024-01-19-18.log",
+            "hash": "0d8a7381feadf3a3fa9a7b8631dca77109e6bcdeea540bdb0793eb938bbf0843"
+        },
+        {
+            "date": 1706115908579,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\succeses\\success-2024-01-24-23.log",
+            "hash": "d9c5495fceafc51a46168cfd5b964259492a838d83d01faab330fa8c6c8a695d"
+        },
+        {
+            "date": 1706125127212,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\succeses\\success-2024-01-25-01.log",
+            "hash": "def47342b820e2a9b912c2e4f8affc8b9f426b97782093abadcbc8295048be0e"
+        },
+        {
+            "date": 1706187527567,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\succeses\\success-2024-01-25-18.log",
+            "hash": "8cf96b0457128b8b97fd70245bbe43e72598461159c6b6b88ac3d29eb269d4cf"
+        },
+        {
+            "date": 1706218528537,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\succeses\\success-2024-01-26-03.log",
+            "hash": "f872785ffa8f7aede4344f02701efcc0b63639dbdcefea73c25d0228ce48cf89"
+        },
+        {
+            "date": 1706220001547,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\succeses\\success-2024-01-26-04.log",
+            "hash": "f63c42ea5958f1ab6cbd1e780385c1ad1e6323684c5db4bbdbeee7b87d9fb6a3"
+        },
+        {
+            "date": 1706268825715,
+            "name": "C:\\Users\\shakil\\projects\\New folder\\Social-media-app-backend\\logs\\winston\\succeses\\success-2024-01-26-17.log",
+            "hash": "d6ea1063f59c079ba42ef98746b6ab2851b03340eaddad3c14b911c5465f6ac7"
+        }
+    ],
+    "hashType": "sha256"
+}
