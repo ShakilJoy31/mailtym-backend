@@ -37,7 +37,7 @@ type IAsianNationality =
   | 'Malaysian'
   | 'Maldivian'
   | 'Mongolian'
-  | 'Burmese'
+  | 'Burmese' 
   | 'Nepali'
   | 'North Korean'
   | 'Omani'
