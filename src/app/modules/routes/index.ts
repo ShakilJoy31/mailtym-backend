@@ -1,11 +1,11 @@
 import express from 'express';
-import { PostRoutes } from '../post/post.route';
+import { AuthenticationRoute } from '../authentication/auth.route';
 
 const router = express.Router();
 const moduleRoutes = [
   {
-    path: '/post',
-    route: PostRoutes,
+    path: '/authentication',
+    route: AuthenticationRoute,
   },
 ];
 
