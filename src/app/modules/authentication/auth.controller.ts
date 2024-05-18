@@ -16,7 +16,7 @@ import {
       sendResponse(res, {
         statusCode: httpStatus.OK,
         success: true,
-        data: post,
+        data: post, 
       });
     },
   )
