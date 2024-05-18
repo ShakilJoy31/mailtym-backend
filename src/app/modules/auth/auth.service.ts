@@ -69,105 +69,6 @@ const userLogin = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   };
 };
 
-// refresh Token
-const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
-  //verify token
-  // invalid token - synchronous
-  let verifiedToken = null;
-  try {
-    verifiedToken = jwtHelpers.verifyToken(
-      token,
-      config.jwt.refresh_token_secret as Secret,
-    );
-  } catch (err) {
-    throw new ApiError(httpStatus.FORBIDDEN, 'Invalid Refresh Token');
-  }
-
-  const { email: Email } = verifiedToken;
-
-  const isUserExist = await User.isUserExist(Email);
-  if (!isUserExist) {
-    throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
-  }
-  //generate new token
-
-  const newAccessToken = jwtHelpers.createToken(
-    {
-      userId: isUserExist._id,
-      role: isUserExist.role,
-      email: isUserExist.email,
-    },
-    config.jwt.token_secret as Secret,
-    config.jwt.token_expirein as string,
-  );
-
-  return {
-    accessToken: newAccessToken,
-  };
-};
-
-// changePassword
-const changePassword = async (
-  payload: IChangePassword,
-  user: JwtPayload | null,
-) => {
-  const { oldPassord, newPassword } = payload;
-
-  // checking user existed
-  const isUserExist = await User.findById(user?.userid);
-  // console.log(isUserExist);
-
-  if (!isUserExist) {
-    throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
-  }
-
-  // checking old password
-  if (
-    isUserExist.password &&
-    !(await User.isPasswordMatched(oldPassord, isUserExist.password))
-  ) {
-    throw new ApiError(httpStatus.UNAUTHORIZED, 'old password is incorrect');
-  }
-
-  isUserExist.password = newPassword;
-  isUserExist.isChangedPassword = true;
-
-  // save the updated password
-  await isUserExist.save();
-};
-
-// email verification
-const emailVerification = async (email: string): Promise<Partial<IUser>> => {
-  // Retrieve the user by email
-  const isUserExist: IUser | null = await User.findOne({
-    email: email,
-  });
-
-  // Check if the user exists
-  if (!isUserExist) {
-    throw new ApiError(httpStatus.NOT_FOUND, 'User not found');
-  }
-
-  // Check if the email is already verified
-  if (isUserExist && isUserExist.isEmailVerified) {
-    throw new ApiError(httpStatus.OK, 'Your email is already Verified');
-  }
-
-  // update email verified data
-  const result = await User.findByIdAndUpdate(
-    isUserExist._id,
-    { isEmailVerified: true },
-    { new: true },
-  );
-
-  // Check if the email is verified
-  if (!result?.isEmailVerified) {
-    throw new ApiError(httpStatus.BAD_REQUEST, 'Email verification failed');
-  }
-
-  return result;
-};
-
 // send Verification email
 const sendEmailVerificationMail = async (email: string): Promise<void> => {
   const isUserExist = await User.isUserExist(email);
@@ -236,18 +137,10 @@ const sendEmailVerificationMail = async (email: string): Promise<void> => {
 //   // }
 // };
 
-
-const getUsersToMakeCommunity = async () => {
-  // checking user existed
-  const users = await User.find();
-  return users;
-};
-
 export const AuthService = {
   userLogin,
   refreshToken,
   changePassword,
   emailVerification,
   sendEmailVerificationMail,
-  getUsersToMakeCommunity
 };
